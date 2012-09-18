@@ -1,9 +1,4 @@
-[Pharmacokinetic]
-=================
+#Pharmacokinetic
+##easy calculation of dose adjustments
 
-Description
-------------
-Calculation of PK-Parameter
-
-Quick start
-------------
+##Quick start
