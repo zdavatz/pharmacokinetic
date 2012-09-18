@@ -1,5 +1,6 @@
 #Pharmacokinetic
+
 ##Description
-Visualize calculation of dose adjustment according to plasma concentrations.
+Visualize calculation of PK parameters according to plasma concentrations. Helps to adjust dose according to personalized parameters.
 
 ##Quick start
