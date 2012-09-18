@@ -1,0 +1,36 @@
+   	html, body { width:99%; height:99%; }
+   
+   	.wrapper{
+	  overflow:scroll;
+	  background: rgba(100, 100, 100, 0.8);
+   	}
+   	
+   	.viewPort {
+		width:900px;
+		height:900px;
+		margin: auto;
+ 	}
+ 	
+ 	#punkt:hover {
+ 	  stroke:rgba(50,50,50, 0.8);
+ 	  stroke-width:2px;
+ 	  cursor:crosshair;
+ 	}
+ 	
+ 	form {
+ 		color:#FFFFFF;
+ 		width:900px;
+ 		height:300px;
+ 	}
+ 	
+ 	fieldset {
+ 		display:inline-block;
+		/*	height:75%; */
+ 		width:190px;
+        float:left;
+        border-radius: 6px;
+ 	} 		
+ 	
+ 	fieldset > input {
+ 		width: 60px;
+ 	}
