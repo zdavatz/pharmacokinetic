@@ -1,4 +1,4 @@
 #Pharmacokinetic
-easy calculation of dose adjustments
+##Visualize calculation of dose adjustments
 
 ##Quick start
