@@ -1,4 +1,4 @@
 pharmacokinetic
 ===============
 
-Calculation of PK-Parameters
+Calculation of PK-Parameter
