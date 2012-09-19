@@ -10,8 +10,8 @@ Use the following <a target="_blank" href="http://modules.epha.ch/vigi/kinetics.
 ##Questions
 ###Support
 Email: zdavatz@ywesee.com
-Phone: +41 43 540 0550
+<br/>Phone: +41 43 540 0550
 
 ###Pharmacology
 Email: support@epha.ch
-Phone: +41 44 586 4435
+<br/>Phone: +41 44 586 4435
