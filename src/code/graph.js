@@ -1,3 +1,5 @@
+
+// Konstruktor
 function Graph(id, width, height, padding) {
 
 		// Container
@@ -28,7 +30,7 @@ function Graph(id, width, height, padding) {
 		// Skalierung
 		this.xCorr = 1;
 		this.yCorr = 1;  		
-	}
+}
     	
     	Graph.prototype.board = function(xMax, yMax) {
     		

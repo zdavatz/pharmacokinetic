@@ -19,7 +19,7 @@
     <script type="text/javascript"><!--
     
 	    window.onload = function() {
-    	
+    		// ID of DIV for Graph
     		graph = new Graph("graph", 900, 600, 50);
     		
     		visualize();
@@ -48,7 +48,6 @@
 	    		if( window.location.hash.length > 0) {
 
 	    			var elemente = window.location.hash.replace("#","").split("&").forEach(zuweisen);
-
 	    		}
 
 	    		param.toInput();
@@ -75,8 +74,6 @@
  	    		graph.coordinates("t in h", "C mg/L");
  	    		return;
  	    	}
- 	    	
- 	    	
 
      		// Concentration Max
      		// Standard
@@ -93,16 +90,13 @@
      		}else{
 	     		getElement("co2").style.opacity = "0.6";     			     			
      		}
-     		
-     		
-     		
+	
      		getElement("cv1").value = 0;
      		getElement("hwz1").value = 0;
      		getElement("cv2").value = 0;
      		getElement("hwz2").value = 0;
      		getElement("co3").style.opacity = "0.6";
      		getElement("co4").style.opacity = "0.6";
-
 
      		// Range Volumen und Eliminiation variiert
      		if(param.c1 > 0 && param.t1 > 0 && param.c2 == 0 && param.t2 == 0){     			
