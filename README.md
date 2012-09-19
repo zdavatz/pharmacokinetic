@@ -14,4 +14,7 @@ If you have a second measurement you can update the values in "Populationsdaten"
 
 F in % stands for Bioverfügbarkeit.
 
+#Background
+This tool was tested by a live sample between two hospitals where Doctor A asked Doctor B to calculate the half-life if the dosage changes. The plasma concentration measurement (16.8) almost matched the prediction (17.0) by the Pharmacokinetic tool.
+
 Questions? Send an Email to zdavatz at ywesee dot com or call 043 540 05 50.
