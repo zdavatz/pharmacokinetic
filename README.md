@@ -7,7 +7,7 @@ Visualize (HTML5) plasma concentration time curve based on dose and concentratio
 Use the following <a target="_blank" href="http://modules.epha.ch/vigi/kinetics.html#bio=100&dosierung=2000&tau=12&hwz=10&v=42&c1=15&t1=11&otb=40&utb=15">link</a> to take a test drive.
 
 
-##Questions
+##Contact
 ###Support
 Email: zdavatz@ywesee.com
 <br/>Phone: +41 43 540 0550
