@@ -1,12 +1,20 @@
-#Pharmacokinetic
+﻿#Pharmacokinetic
 
 ##Description
 Visualize (HTML5) plasma concentration time curve based on dose and concentrations. Calculated PK parameters enable to personalize drug dose. 
 
+<<<<<<< HEAD
+
+##Quick start
+Use the following link to get an idea how this tool works:
+
+Take a test <a target="_blank" href="http://modules.epha.ch/vigi/kinetics.html#bio=100&dosierung=2000&tau=12&hwz=10&v=42&c1=15&t1=11&otb=40&utb=15">drive</a>
+=======
 #Quick start
 Use the following link to get an idea how this tool works:
 
 * http://modules.epha.ch/vigi/kinetics.html#bio=100&dosierung=2000&tau=12&hwz=10&v=42&c1=15&t1=11&otb=40&utb=15
+>>>>>>> 5da84fbe218f645a56351d1b3bd9f5da9c189f07
 
 C1 and T1 can be taken from the Plasma-Concentration Reader. If you want to work more precisely you should fill in C2 and T2 as well.
 
@@ -14,7 +22,10 @@ If you have a second measurement you can update the values in "Populationsdaten"
 
 F in % stands for Bioverfügbarkeit.
 
+<<<<<<< HEAD
+=======
 #Background
 This tool was tested by a live sample between two hospitals where Doctor A asked Doctor B to calculate the half-life if the dosage changes. The plasma concentration measurement (16.8) almost matched the prediction (17.0) by the Pharmacokinetic tool.
 
+>>>>>>> 5da84fbe218f645a56351d1b3bd9f5da9c189f07
 Questions? Send an Email to zdavatz at ywesee dot com or call 043 540 05 50.
