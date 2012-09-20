@@ -7,9 +7,7 @@ Visualize (HTML5) plasma concentration time curve based on dose and concentratio
 Use the following <a target="_blank" href="http://modules.epha.ch/vigi/kinetics.html#bio=100&dosierung=2000&tau=12&hwz=10&v=42&c1=15&t1=11&otb=40&utb=15">link</a> to take a test drive.
 
 ##Use case
-The patient receives a substance, which should be monitored. Plasma concentrations of the substance is measured and can be compared to, what would be expected in the normal population. The personalized PK parameters can then be used to predict the plasma concentration time curve based on a particular dose. 
-
-The impact of different dose adjustments is visualized according to the predicted PK parameters of the patient. 
+The patient receives a substance, which should be monitored. Plasma concentrations of the substance is measured and can be compared to, what would be expected in the normal population. The personalized PK parameters can then be used to predict the plasma concentration time curve based on the dose adjustment. 
 
 ##Steps
 <ol>
