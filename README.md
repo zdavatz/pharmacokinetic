@@ -21,14 +21,6 @@ The patient receives a substance, which should be monitored. Plasma concentratio
 
 
 ##Questions
-###Support
-Email: zdavatz@ywesee.com
-<br/>Phone: +41 43 540 0550
-
-###Coding
-Email: support@epha.ch
-<br/>Phone: +41 44 586 4435
-
 ###Clinical Pharmacology
 University hospital Zurich
 <br/>Raemistrasse 100
@@ -37,3 +29,11 @@ University hospital Zurich
 Phone: +41 (0)44 255 20 68
 <br/>Fax:   +41 (0)44 255 44 11
 <br/>Email: medi.info@usz.ch
+
+###Coding
+Email: support@epha.ch
+<br/>Phone: +41 44 586 4435
+
+###Support
+Email: zdavatz@ywesee.com
+<br/>Phone: +41 43 540 0550
