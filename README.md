@@ -29,12 +29,11 @@ Email: zdavatz@ywesee.com
 Email: support@epha.ch
 <br/>Phone: +41 44 586 4435
 
-###Pharmacology
-<b>Clinical Pharmacology and Toxicology</b> 
+###Clinical Pharmacology and Toxicology
 <br/>University hospital Zurich
 <br/>Raemistrasse 100
 <br/>8091 Zurich, Switzerland
 
-<br/>Phone: +41 (0)44 255 20 68
+Phone: +41 (0)44 255 20 68
 <br/>Fax:   +41 (0)44 255 44 11
 <br/>Email: medi.info@usz.ch
