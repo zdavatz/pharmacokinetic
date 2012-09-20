@@ -12,6 +12,18 @@ Use the following <a target="_blank" href="http://modules.epha.ch/vigi/kinetics.
 Email: zdavatz@ywesee.com
 <br/>Phone: +41 43 540 0550
 
-###Pharmacology
+###Coding
 Email: support@epha.ch
 <br/>Phone: +41 44 586 4435
+
+###Pharmacology
+Clinical Pharmacology and Toxicology
+University hospital Zurich
+Raemistrasse 100
+8091 Zurich
+Switzerland
+
+Phone: +41 (0)44 255 20 68
+Fax:   +41 (0)44 255 44 11
+Email: medi.info@usz.ch
+
