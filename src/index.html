@@ -1,7 +1,6 @@
 <!DOCTYPE html>
-<!--
 
--->
+<!-- LANGUAGE SETTING -->
 <html lang="de">
   <head>
   
@@ -16,29 +15,23 @@
     </style>
     
     <script type="text/javascript" src="code/graph.js"></script> 
+    
+	<!-- LANGUAGE FILE EINBINDEN -->
+    <script type="text/javascript" src="code/langu.de.js"></script>     
+    
     <script type="text/javascript"><!--
     
 	    window.onload = function() {
+    	
     		// ID of DIV for Graph
     		graph = new Graph("graph", 900, 600, 50);
     		
+    		setLanguage();
+
     		visualize();
 	    }
+
     
-		function zuweisen(e){
-			if( e.split("=")[0 ] in param){
-				param[ e.split("=")[0] ] = parseFloat( e.split("=")[1] );
-			}
-		}
-
-		function getElement(id) {
-			return document.getElementById(id);
-		}
-
-		function getValue(id) {
-			return parseFloat( document.getElementById(id).value );	
-		}
-
 	    function visualize(event){
 
 	    	param = new Kinetic();
@@ -71,7 +64,11 @@
 
  	    	if(param.hwz == 0 || param.v == 0){
  	    		graph.board(100, 100);	
- 	    		graph.coordinates("t in h", "C mg/L");
+ 	    		
+ 	 	    	var abszisse = translate("ABSZISSE");
+ 	 	    	var ordinate = translate("ORDINATE");
+ 	    	    graph.coordinates(abszisse, ordinate);
+ 	    	    
  	    		return;
  	    	}
 
@@ -98,6 +95,8 @@
      		getElement("co3").style.opacity = "0.6";
      		getElement("co4").style.opacity = "0.6";
 
+     		// Reset
+     		translate("RECHENART","RECHENART");
      		// Range Volumen und Eliminiation variiert
      		if(param.c1 > 0 && param.t1 > 0 && param.c2 == 0 && param.t2 == 0){     			
 				// Volumen a)
@@ -119,7 +118,7 @@
 	     		getElement("cv2").value = cv1b.toFixed(2);
 	     		getElement("hwz2").value = (Math.log(2) / cke1b).toFixed(1);
 
-	     		getElement("rechenart").innerHTML = "Variation V <b>und</b> t<sub>1/2</sub>";
+	     		translate("RECHENART_VARIATION","RECHENART");
 
 	     		getElement("co3").style.opacity = "1";
 	     		getElement("co4").style.opacity = "1";
@@ -136,8 +135,8 @@
 	     		getElement("hwz1").value = (Math.log(2) / cke2 ).toFixed(1);
 	     		getElement("cv2").value = 0;
 	     		getElement("hwz2").value = 0;
-
-	     		getElement("rechenart").innerHTML = "Berechnung V <b>und</b> t<sub>1/2</sub>";
+	     		
+	     		translate("RECHENART_PRECISE","RECHENART");
 
 	     		getElement("co3").style.opacity = "1";
 	     		getElement("co4").style.opacity = "0.6";
@@ -153,7 +152,9 @@
  	    	// Graph Build
 			graph.board( tmax, cmax );
 
-    	    graph.coordinates("t in h", "C mg/L");
+ 	    	var abszisse = translate("ABSZISSE");
+ 	    	var ordinate = translate("ORDINATE");
+    	    graph.coordinates(abszisse, ordinate);
     	    
     	    // Limits
     	    graph.limit( getValue("utbi"), "rgba(50  ,255,50,0.4)");
@@ -194,58 +195,58 @@
 		  	<form id="werte">
 
 		  		<fieldset>
-		  			<legend><b>Dosierung</b></legend>
+		  			<legend id="DOSIERUNG"></legend>
 
 					<input type="number" id="bioi" name="bioi" min="1" max="100" value="100" onchange="visualize(event)" step="1" />		
-					<label for="bioi" title="Bioverfügbarkeit" >F <i>in %</i></label>
+					<label id="F" for="bioi"></label>
 	  				<hr/>
 					<input type="number" id="dosierungi" name="dosisi" min="0" max="10000" onchange="visualize(event)" step="100"/>		
-					<label for="dosierungi" title="Dosierung">D <i>in mg</i></label>
+					<label id="DOSIS" for="dosierungi"></label>
 	  				<hr/>
 					<input type="number" id="taui" name="taui" min="0" max="1000" onchange="visualize(event)" />		
-					<label for="taui" title="Dosierungsintervall"><span style="font-size:1.5em">&#964;</span> <i>in h</i></label>
+					<label id="INTERVALL" for="taui"></label>
 	  				<hr/>	
 					<input type="number" id="cssmini" name="cssi" min="0" max="1000" onchange="visualize(event)" />	
-					<label for="cssmini" title="Steady-State-Konzentration bei erster Dosierung">C<sub>min</sub> <i>in mg/L</i></label>			
+					<label id="PREDOSE" for="cssmini"></label>			
 				</fieldset>
 
 		  		<fieldset>
-		  			<legend><b>Populationsdaten</b></legend>
+		  			<legend id="POPULATIONSDATEN"></legend>
 
 					<input type="number" id="tini" min="0" max="10"  step="0.1" value="0" onchange="visualize(event)"  />
-					<label for="tini" title="Halbwertszeit der Absorbtion nach oraler Gabe" >t<sub>in</sub> <i>in h</i></label>
+					<label id="ABSORPTION" for="tini"></label>
 	  				<hr/>
 					<input type="number" id="hwzi" min="0" max="100" value="12.0" step="1" onchange="visualize(event)" />
-					<label for="hwzi" title="Halbwertszeit der Konzentration" >t<sub>1\2</sub> <i>in h</i></label>
+					<label id="HALBWERTSZEIT" for="hwzi"></label>
 	  				<hr/>
 					<input type="number" id="vi" min="0" max="100" step="1" onchange="visualize(event)" />
-					<label for="vi" title="Verteilungsvolumen" >V <i>in L</i></label>
+					<label id="VOLUMEN" for="vi"></label>
 	  				<hr/>
 					<input type="number" id="clo" min="0.1" max="100"  step="1"  disabled/>
-					<label for="clo" title="Berechnete Clearance" >Cl <i>in L/h</i></label>
+					<label id="CLEARANCE" for="clo" ></label>
 	  				<hr/>
 					<input type="number" id="keo" min="0.001" max="1"  step="0.1" disabled/>
-					<label for="keo" title="Berechnete Eliminationskonstante" >k<sub>e</sub> <i>in <sup>-h</sup></i></label>
+					<label id="ELIKONSTANTE" for="keo" ></label>
 				</fieldset>
 
 		  		<fieldset id="personalisierung" >
-		  			<legend><b>Personalisierung Css</b></legend>
+		  			<legend id="PERSONALISIERUNG"></legend>
 
 			  			<p id="co1" style="padding:0px;margin:0px;background-color:rgba(0,50,200, 0.6);opacity:0.6">
 							<input type="number" id="c1i" min="1" max="1000" value="260" onchange="visualize(event)" style="width:55px" />
-							<label for="c1i" >C<sub>1</sub></label>
+							<label id="KONZENTRATION1" for="c1i" ></label>
 							<input type="number" id="t1i" min="1" max="1000" value="52" onchange="visualize(event)" style="width:55px"/>
-							<label for="t1i" >t<sub>1</sub></label>
+							<label id ="ZEIT1" for="t1i" ></label>
 						</p>
 	  				<hr/>
 			  			<p id="co2" style="padding:0px;margin:0px;background-color:rgba(0,100,200, 0.6);opacity:0.6">
 							<input type="number" id="c2i" min="1" max="1000" value="137" onchange="visualize(event)" style="width:55px"/>
-							<label for="c2i" >C<sub>2</sub></label>
+							<label id="KONZENTRATION2" for="c2i" ></label>
 							<input type="number" id="t2i" min="1" max="1000" value="63" onchange="visualize(event)" style="width:55px" />
-							<label for="t2i" >t<sub>2</sub></label>	
+							<label id="ZEIT2" for="t2i" ></label>	
 						</p>
 					<hr/>
-					<label id="rechenart">Keine Berechnung</label>	
+					<label id="RECHENART"></label>	
 					<hr/>
 			  			<p id="co3" style="padding:0px;margin:0px;background-color:rgba(0,150,200, 0.6);opacity:0.6">
 							<input type="number" id="cv1" style="width:60px;"  disabled/>
@@ -263,16 +264,16 @@
 				</fieldset>
 
 				<fieldset>
-		  			<legend><b>Therapeutischer Bereich</b></legend>
+		  			<legend id="BEREICH"></legend>
 
 		  			<p style="padding:0px;margin:0px;background-color:rgba(255,50,50,0.4);">
 						<input type="number" id="otbi" min="1" max="10000" value="400" onchange="visualize(event)" style="width:60px;"  />
-						<label for="otbi" >Obere Grenze</label>
+						<label id="OBERE_GRENZE" for="otbi" ></label>
 					</p>
 					<hr/>
 		  			<p style="padding:0px;margin:0px;background-color:rgba(50,255,50,0.4);">
 						<input type="number" id="utbi" min="1" max="10000" value="200" onchange="visualize(event)" style="width:60px;"   />
-						<label for="utbi" >Untere Grenze</label>	
+						<label id="UNTERE_GRENZE" for="utbi" ></label>	
 				</fieldset>
 
 			</form>
