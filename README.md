@@ -7,12 +7,20 @@ Visualize (HTML5) plasma concentration time curve based on dose and concentratio
 Use the following <a target="_blank" href="http://modules.epha.ch/vigi/kinetics.html#bio=100&dosierung=2000&tau=12&hwz=10&v=42&c1=15&t1=11&otb=40&utb=15">link</a> to take a test drive.
 
 ##Use case
-This tool was tested by a live sample between two hospitals where Doctor A asked Doctor B to calculate the half-life if the dosage changes. The Plasma Concentration measurement (16.8) almost matched the prediction (17.0) by the Pharmacokinetic tool.
-C1 and T1 can be taken from the Plasma-Concentration (PC) Reader. It is recommended that you do a second PC-Reading (C2 and T2) to personalize the dosage for the patient.
+The patient receives a substance, which should be monitored. Plasma concentrations of the substance is measured and can be compared to, what would be expected in the normal population. The personalized PK parameters can then be used to predict the plasma concentration time curve based on a particular dose. 
 
-If you have a second measurement you can update the values in "Populationsdaten". "Populationsdaten" are generally taken from the Swiss-Fachinfo. They are based on average measurments. So to be more precise you need a second measurement.
+The impact of different dose adjustments is visualized according to the predicted PK parameters of the patient. 
 
-F in % stands for Bioverfügbarkeit.
+##Steps
+<ol>
+<li>Input dose regimen</li>
+<li>Input population based PK parameters</li>
+<li>Input at least one plasma concentraton</li>
+<li>Compare the calculated values V and t1/2 to the average population</li>
+<li>Input the calculated values as the new parameters (previous population parameters)</li>
+<li>Adjust the dose to fit the intended plasma concentration</li>
+</ol>
+
 
 ##Questions
 ###Support
@@ -24,7 +32,10 @@ Email: support@epha.ch
 <br/>Phone: +41 44 586 4435
 
 ###Pharmacology
-Clinical Pharmacology and Toxicology, University hospital Zurich, Raemistrasse 100, 8091 Zurich, Switzerland
+<b>Clinical Pharmacology and Toxicology</b> 
+<br/>University hospital Zurich
+<br/>Raemistrasse 100
+<br/>8091 Zurich, Switzerland
 
 <br/>Phone: +41 (0)44 255 20 68
 <br/>Fax:   +41 (0)44 255 44 11
