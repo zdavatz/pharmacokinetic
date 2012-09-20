@@ -15,9 +15,9 @@ The impact of different dose adjustments is visualized according to the predicte
 <ol>
 <li>Input dose regimen</li>
 <li>Input population based PK parameters</li>
-<li>Input at least one plasma concentraton</li>
+<li>Input at least one plasma concentration</li>
 <li>Compare the calculated values V and t1/2 to the average population</li>
-<li>Input the calculated values as the new parameters (previous population parameters)</li>
+<li>Replace population parameters by calculated values</li>
 <li>Adjust the dose to fit the intended plasma concentration</li>
 </ol>
 
