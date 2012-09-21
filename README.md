@@ -15,6 +15,11 @@ F in % stands for Bioverfügbarkeit.
 ##Background
 This tool was tested by a live sample between two hospitals where Doctor A asked Doctor B to calculate the half-life if the dosage changes. The Plasma Concentration measurement (16.8) almost matched the prediction (17.0) by the Pharmacokinetic tool.
 
+##Why OpenSource?
+By OpenSourcing this tool on Github we hope to tap into the global community of doctors that are confronted on a daily basis on how much of a drug to give to a patient. The Mathematics behind this tool are OpenSource and therefor reproduceable for everyone. Feel free to tap in and help make this tool better for global usage.
+
+Patches are always welcome!
+
 ##Questions
 ###Support
 Email: zdavatz@ywesee.com

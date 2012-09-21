@@ -1,6 +1,22 @@
+// Utility functions
+function zuweisen(e){
+	if( e.split("=")[0 ] in param){
+		param[ e.split("=")[0] ] = parseFloat( e.split("=")[1] );
+	}
+}
+
+function getElement(id) {
+	return document.getElementById(id);
+}
+
+function getValue(id) {
+	return parseFloat( document.getElementById(id).value );	
+}
+
 
 // Konstruktor
 function Graph(id, width, height, padding) {
+
 
 		// Container
 		this.view = document.getElementById(id);
@@ -352,4 +368,52 @@ function Graph(id, width, height, padding) {
     		}
     		 
     	};
+    	
+   // LANGUAGE
+  
+    var langu = {};	
+    	
+    function setLanguage() {
+    	var sprache = document.documentElement.lang;
+    	
+    	if(langu[sprache]){
+    		langu.sprache = sprache;
+    		
+    		translateElements();
+    	}else{
+    		alert("Language File is missing");
+    	}
+    	
+    	
+    }
+    
+    function translateElements() {
+    	
+    	var toTranslate = [];
+    	toTranslate.push("DOSIERUNG","F","DOSIS","INTERVALL","PREDOSE");
+    	toTranslate.push("POPULATIONSDATEN","ABSORPTION","HALBWERTSZEIT","VOLUMEN","CLEARANCE","ELIKONSTANTE");
+    	toTranslate.push("PERSONALISIERUNG","KONZENTRATION1","ZEIT1","KONZENTRATION2","ZEIT2","RECHENART");
+    	toTranslate.push("BEREICH","OBERE_GRENZE","UNTERE_GRENZE");
+    	
+    	toTranslate.forEach(function(e){
+    		translate(e,e);
+    	});
+    	
+    }
+
+    function translate(vokabel, element) {
+
+    	var woerterbuch = langu[ langu.sprache ];
+    	
+    	if(element){
+			temp = getElement(element).innerHTML = woerterbuch[vokabel];
+			getElement(element).title = woerterbuch[vokabel+"_INFO"];	   
+    	}else{
+    		return woerterbuch[vokabel];
+    	}
+
+    }
+
+
+	
     	
