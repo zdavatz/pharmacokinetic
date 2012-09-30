@@ -18,10 +18,10 @@ langu.fr = {
 	HALBWERTSZEIT: "t<sub>1\2</sub> <i>en heures</i>",
 	HALBWERTSZEIT_INFO: "temps de demie-vie",
 	VOLUMEN: "V <i>in L</i>",
-	VOLUMEN_INFO: "Verteilungsvolumen",
-	CLEARANCE: "Cl <i>in L/h</i>",
+	VOLUMEN_INFO: "volume de distribution",
+	CLEARANCE: "Cl <i>en L/h</i>",
 	CLEARANCE_INFO: "Berechnete Clearance",
-	ELIKONSTANTE: "k<sub>e</sub> <i>in <sup>-h</sup></i>",
+	ELIKONSTANTE: "k<sub>e</sub> <i>en <sup>-h</sup></i>",
 	ELIKONSTANTE_INFO: "Berechnete Eliminationskonstante",
 	
 	PERSONALISIERUNG:"<b>Personalisierung Css</b>",
@@ -49,6 +49,6 @@ langu.fr = {
 	UNTERE_GRENZE_INFO: "Untere Grenze des Talspiegels",
 		
 	ORDINATE : "C mg/L",
-	ABSZISSE : "t in h"
+	ABSZISSE : "t en h"
 	
 };
