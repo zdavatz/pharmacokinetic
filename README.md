@@ -30,7 +30,7 @@ Phone: +41 (0)44 255 20 68
 
 ###Translation
 Robin Herve (fr)
-<br/>robin.herve@gmail.com
+<br/>Email: robin.herve@gmail.com
 
 ###Coding
 Marco Egbring
