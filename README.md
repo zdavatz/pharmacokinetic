@@ -18,7 +18,7 @@ The patient receives a substance, which should be monitored. Plasma concentratio
 </ol>
 
 
-##Questions
+##Contributors
 ###Clinical Pharmacology
 University hospital Zurich
 <br/>Raemistrasse 100
@@ -28,10 +28,15 @@ Phone: +41 (0)44 255 20 68
 <br/>Fax:   +41 (0)44 255 44 11
 <br/>Email: medi.info@usz.ch
 
+###Translation (fr)
+Herve Robin
+
 ###Coding
-Email: support@epha.ch
+Marco Egbring
+<br/>Email: support@epha.ch
 <br/>Phone: +41 44 586 4435
 
 ###Support
-Email: zdavatz@ywesee.com
+Zeno Davatz
+<br/>Email: zdavatz@ywesee.com
 <br/>Phone: +41 43 540 0550
