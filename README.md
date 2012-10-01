@@ -8,8 +8,6 @@ Use the following <a target="_blank" href="http://modules.epha.ch/vigi/kinetics.
 
 ##Use case
 The patient receives a substance, which should be monitored. Plasma concentrations of the substance is measured and can be compared to, what would be expected in the normal population. The personalized PK parameters can then be used to predict the plasma concentration time curve based on the dose adjustment. 
-
-##Steps
 <ol>
 <li>Input dose regimen</li>
 <li>Input population based PK parameters</li>
