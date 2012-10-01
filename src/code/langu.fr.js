@@ -24,7 +24,8 @@ langu.fr = {
 	ELIKONSTANTE: "k<sub>e</sub> <i>in <sup>-h</sup></i>",
 	ELIKONSTANTE_INFO: "Berechnete Eliminationskonstante",
 	
-	PERSONALISIERUNG:"<b>personnalisation de la concentration à l'équilibre (Css, Concentration steady state)</b>",
+	PERSONALISIERUNG:"<b>personnalisation</b>",
+	//de la concentration à l'équilibre (Css, Concentration steady state)
 	PERSONALISIERUNG_INFO:"Calcul des paramètres pharmacocinétiques individuels",
 	KONZENTRATION1: "C<sub>1</sub>",
 	KONZENTRATION1_INFO: "concentration mesurée avant la dose suivante (résiduelle)",
@@ -49,6 +50,6 @@ langu.fr = {
 	UNTERE_GRENZE_INFO: "Limite inférieure de la concentration minimale",
 		
 	ORDINATE : "C mg/L",
-	ABSZISSE : "t in heures"
+	ABSZISSE : "t en h"
 	
 };
